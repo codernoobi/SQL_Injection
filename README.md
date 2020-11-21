@@ -5,8 +5,12 @@ Follow the steps to execute the demo.
 
 ---
 ---
-###Set up
+### Set up
+
+
 Download Wamp
+
+
 Once downloaded and installed check C drive for wamp64 folder which would contian dependencies.
 Wamp internally installs PHP and MySQL required fro the execution
 
@@ -15,7 +19,9 @@ This example will follow Wamp
 
 ---
 ---
-###Creating DB artifacts
+### Creating DB artifacts
+
+
 Once successfully installing Wamp, open wampserver.exe to start wamp (in C drive wamp64 folder) then open the localhost to see wamp dash board.
 
 localhost:8080/phpmyadmin (if asked for login user: root password is blank by default) would open PHP dashboard where a DB and respective artifacts can be created
@@ -32,7 +38,9 @@ name varchar(30)
 
 ---
 ---
-###Insertion to DB:
+### Insertion to DB
+
+
 There are 2 approaches we will exlpore in this project
 1. normal insertion
 INSERT INTO `user_details`(`user_id`, `password, `email`, `name`) VALUES ([value-1],[value-2],[value-3],[value-4])
@@ -46,12 +54,12 @@ Insert multiple records with both commands
 
 ---
 ---
-###App creation:
+### App creation
 Copy the .html and .php file in this repo to c:/wamp64/www/sqlInj/ (create a new folder with desired name like sqlInj)
 
 ---
 ---
-###Code Explanation:
+### Code Explanation
 HTML file is a simple form with 2 input fields(user_id, password) and a button(submit).
 PHP file contains logic
 
@@ -86,8 +94,8 @@ This block prints user details if it is valid login
 
 ---
 ---
-###Execution:
-####Demo
+### Execution:
+#### Demo
 Once the files are copitd to the specified location refresh the wamp dashboard in localhost
 The newely created folder will be availabe under Your Projects. open localhost/sqlInj in new tab to see the list of files in the folder
 Open the .html file
@@ -120,7 +128,7 @@ This would fail with invalid user error
 ---
 ---
 
-###Conclusion:
+### Conclusion:
 Avoiding SQL Injection 
 Best coding practices like using ==1 for preventing attacker from viewing multiple user information at once, but the data is still vulnerable.
 using actions on input like encryption before insertion, using escape sequence on inputs, using stored procedures and not using dynamic queries etc will prevent data leak for some extension

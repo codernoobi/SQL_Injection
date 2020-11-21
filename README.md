@@ -125,19 +125,18 @@ The newely created folder will be availabe under Your Projects. open localhost/s
 
 Open the .html file
 
-
 A login form will open in a new tab
 
 Use valid user_id and password of the record inserted using normal insertion(mentioned in insertion to db block)
 
 Successful login will give the users personal info in a new page (true for all scenarios mentioned below)
 
-
+---
 1: Now for the same user try using **anything' or 'x' = 'x** as password
 
 This would give personal information of all the users in db
 
-
+---
 2: In the .php file line 26 change the if condition from >0 to ==1 save the file.
 
 Reopen the html file in browser
@@ -152,7 +151,7 @@ Now try with the password **x' = 'x** for the same user
 
 This would give the personal information of the user
 
-
+---
 3: In .php file uncomment line 23 and comment line 24 save the file
 
 Reopen the html file in the browser
